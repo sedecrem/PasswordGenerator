@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedecrem Vault</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Zilla+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel = "icon" href = "logo.png" type = "image/x-icon">
+    <script src="https://kit.fontawesome.com/1ed5e69d05.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <i class="fa-solid fa-vault"></i>
+        <h1>Sedecrem Vault</h1>
+    </div>
+    <section>
+        <div class="headings">
+            <h1>Password Generator</h1>
+            <h2>Create strong and secure passwords to keep your accounts safe.</h2>
+        </div>
+        <div class="input-box">
+            <input type="text" disabled id="password">
+            <button class="btn" id="copy">Copy</button>
+        </div>
+    </section>
+    <br>
+    <section class="generation">
+        <div class="slider-container">
+            <h3>Password Length:</h3>
+            <p><span id="demo"></span></p>
+            <input type="range" min="1" max="15" value="8" class="slider" id="myRange">
+        </div>
+        <h3>Pick the characters of your choice:</h3>
+        <br>
+        <div class="container">
+        <div class="box">
+            <input type="checkbox" name="id" id="upper-case">
+            <div class="boxContent">
+                <p>Uppercase(a-z)</p>
+            </div>
+        </div>
+        <div class="box">
+            <input type="checkbox" name="id" id="lower-case">
+            <div class="boxContent">
+                <p>Lowercase(A-Z)</p>
+            </div>
+        </div>
+        <div class="box">
+            <input type="checkbox" name="id" id="numbers">
+            <div class="boxContent">
+                <p>Numbers(0-9)</p>
+            </div>
+        </div>
+        <div class="box">
+            <input type="checkbox" name="id" id="symbols">
+            <div class="boxContent">
+                <p>Symbols(!-#^*)</p>
+            </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <button class="create" id="create">Generate Password</button>
+    </section>
+</body>
+</html>
